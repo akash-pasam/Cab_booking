@@ -1,0 +1,59 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Vcabs</title>
+<link href="webjars/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<script src="webjars/jquery/3.5.1/jquery.min.js"> </script>
+<script src="webjars/bootstrap/4.5.0/js/bootstrap.min.js"> </script>
+<script src="webjars/popper.js/1.16.0/umd/popper.min.js"> </script>
+<div>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="">V</a>
+          <button class="navbar-toggler" data-toggle="collapse"  
+          data-target="#navbarResponsive">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                      <a class="nav-link" href="index">Home</a>
+                  </li>
+                  <c:set var="name" scope="session" value="${ dname }"/>  
+				    <c:if test="${name != null}">  
+   					<li class="nav-item">
+                    <a class="nav-link" href="/confirmation">pick a ride</a>
+                	</li>
+					</c:if> 
+                  <li class="nav-item">
+                      <a class="nav-link"href="#">Features</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Contact</a>
+                  </li>
+                  <c:set var="name" scope="session" value="${ dname }"/>  
+				    <c:if test="${name == null}">  
+                  <li class="nav-item">
+                      <a class="nav-link" href="/driverlogin">Login</a>
+                  </li>
+                  </c:if> 
+                  <c:set var="name" scope="session" value="${ dname }"/>  
+				    <c:if test="${name != null}">  
+                  <li class="nav-item">
+                      <a class="nav-link" href="/logout">logout</a>
+                  </li>
+                  </c:if> 
+              </ul>
+          </div>
+      </div>
+  </nav>
+</div>
+</body>
+</html>

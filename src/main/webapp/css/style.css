@@ -1,0 +1,154 @@
+@charset "ISO-8859-1";
+@import url('https://fonts.googleapis.com/css?family=poppins:400,500,700');
+html,body{
+	height:100%;
+	width:1260px;
+	font-family :'poppins',sans-serif;
+	color:#222;
+}
+.navbar{
+	padding:.8rem;
+	width:1280px;
+}
+.navbar-nav li{
+	padding-right:10px;
+}
+.nav-link{
+	font-size:1.1em !important;
+}
+.carousel-inner img{
+	width:1274px;
+	height:650px;
+}
+#left {
+  text-align:left;
+}
+#name{
+	margin-left:100px;
+	margin-top:10px;
+}
+#email{
+	margin-left:103px;
+	margin-top:10px;
+}
+#phoneno{
+	margin-left:40px;
+	margin-top:10px;
+}
+#password{
+	margin-left:75px;
+	margin-top:10px;
+}
+#rpass{
+	margin-left:20px;
+	margin-top:10px;
+}
+#modelname{
+	margin-left:65px;
+	margin-top:10px;
+}
+.carousel-caption{
+ font-size: 38px;
+  color: #FFFAFA;
+  top:150px;
+   position: absolute;
+    text-align:left;
+     font-weight: 600;
+	margin-left:-50px;
+  padding:0 20px;
+}
+.two{
+	color:	#FFFAFA;
+	position:absolute;
+	margin-left:390px;
+	margin-top:130px;
+}
+.three{
+	color:	#FFFAFA;
+	position:absolute;
+	margin-left:10px;
+	margin-top:70px;
+}
+.section-heading{
+	font-size: 36px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.92);
+  margin-bottom: 5px;
+  display: block;
+}
+.signin-text{
+	margin-left:20px;
+}
+.login{
+	positon:absolute;
+	margin-top:100px;
+	margin-left:400px;
+}
+.login-button{
+	margin-left:120px;
+}
+.login-set{
+	margin-left:30px;
+}
+.borderLeft {
+  border-left: 2px solid #222;
+  border-right: 2px solid #222;
+  border-bottom: 2px solid #222;
+  border-top: 2px solid #222;
+  position: absolute;
+}
+.register-form{
+	positon:absolute;
+	margin-top:30px;
+	margin-left:400px;
+	border:light
+}
+.register-button{
+	margin-left:140px;
+}
+.signin{
+	margin-top:20px;
+	margin-left:10px;
+}
+.passengers{
+	margin-top:50px;
+}
+.fromlocation{
+	margin-top:30px;
+}
+.tolocation{
+	margin-top:30px;
+}
+.geocoder {
+position: absolute;
+z-index: 0;
+width: 48%;
+left: 50%;
+margin-left: -36%;
+top: 152px;
+}
+.geocoder2 {
+position: absolute;
+z-index: 1;
+width: 48%;
+left: 50%;
+margin-left: -36%;
+top: 220px;
+}
+.mapboxgl-ctrl-geocoder {
+min-width: 50%;
+}
+#map {
+margin-left:510px;
+margin-top:55px;
+margin-right:0px;
+width:60%;
+}
+.booking-btn{
+	margin-left:130px;
+	margin-top:20px;
+}
+footer{
+	background-color:#2b2828;
+	color:#FFFFFF;
+}
